@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/cyber.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>CYBER FORM.IN</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #0a0a0a;
+        font-family: 'Courier New', monospace;
+        color: #00fff7;
+    }
+
+    .container {
+        width: 400px;
+        margin: 50px auto;
+        padding: 30px;
+        background: rgba(0,0,0,0.8);
+        border: 2px solid #00fff7;
+        box-shadow: 0 0 20px #00fff7;
+        border-radius: 10px;
+    }
+
+    h2 {
+        text-align: center;
+        text-shadow: 0 0 10px #00fff7;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        background: #111;
+        border: 1px solid #00fff7;
+        color: #00fff7;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    input:focus, textarea:focus {
+        box-shadow: 0 0 10px #00fff7;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        background: #00fff7;
+        border: none;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #00cfc7;
+        box-shadow: 0 0 15px #00fff7;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>⚡ MASUM CYBER ZONE ⚡</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required="">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required="">
+
+        <label>Meeting Type</label>
+        <select>
+            <option>Online</option>
+            <option>Offline</option>
+        </select>
+         <label for="dob">Date of birth</label>
+        <input type="date" required="">
+
+        <label>Time</label>
+        <input type="time" required="">
+
+        <label>Message</label>
+        <textarea rows="3" placeholder="Enter details..."></textarea>
+
+        <button type="submit">APPLY</button>
+    </form>
+</div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
